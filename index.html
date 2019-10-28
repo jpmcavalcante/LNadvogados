@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
+    <!--METATAGs-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <title>Leite Neves | Advogados</title>
 
     <!--CDN BOOTSTRAP-->
-    <link rel="stylesheet" href="bootstrap-4.2.1/css/bootstrap.min.css" type="text/css">
+    <link href="bootstrap-4.2.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
     <!--ESTILO-->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet"  type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 
 <body>
     <!--MENU - NAVBAR-->
     <header>
         <nav class="navbar navbar-expand-lg"> 
             <div class="container">
-                <a class="navbar-brand" href="#"><img class="logo" src="img/logo_ln.svg"
-                        alt="Logo Escritório de Advocacia Leite Neves" /></a>
+                <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo_ln.svg"
+                        alt="Logotipo do Escritório de Advocacia Leite Neves" />
+                </a>
                 <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                     aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,6 +44,12 @@
                         </li>
                         <li class="nav-item active mr-2">
                             <a class="nav-link" href="#">especialidade</a>
+                        </li>
+                        <li class="nav-item active mr-2">
+                                <a class="nav-link" href="#">equipe</a>
+                        </li>
+                        <li class="nav-item active mr-2">
+                                <a class="nav-link" href="#">blog</a>
                         </li>
                         <li class="nav-item active mr-2">
                             <a class="nav-link" href="#">contato</a>
@@ -62,21 +73,21 @@
                     <div class="carousel-item active">
                         <img src="img/slide02.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
+                            <h5>PRIMEIRO SLIDE</h5>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/slide02.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
+                            <h5>SEGUNDO SLIDE</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/slide03.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
+                            <h5>TERCEIRO SLIDE</h5>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                         </div>
                     </div>
@@ -93,18 +104,92 @@
         </section>
     </main>
 
+    <!--SECTION ABOUT ME-->
     <section class="section-aboutme">
         <div class="container">
-                <h2>quem somos</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img class="img-fluid img-thumbnail" src="img/advogado-model.jpg" alt="Foto de Advogado"/>
+                </div>
+                <div class="aboutme-text text-break text-justify col-sm-12 col-md">
+                    <h3>Missão</h3>
+                    <p>Oferecer serviços jurídicos e criar valores e soluções inteligentes para o exercício da advocacia com qualidade de excelência, contribuindo com o desenvolvimento, a organização e o sucesso dos nossos clientes, colaboradores e parceiros, interagindo e desenvolvendo ações na comunidade, fortalecendo o exercício do direito de cada cidadão.</p>
+                    <h3>Visão</h3>
+                    <p>Manter-se como referência nos segmentos em que atua, sendo sempre reconhecida pelos seus clientes como uma empresa moderna, inovadora e eficiente.</p>
+                    <h2>Valores</h2>
+                    <ul style="padding-left: 3%;">
+                        <li>ExcelênciaPrestar serviços com eficiência e qualidade, superando as expectativas de cada um de seus clientes;</lo>
+                        <li>Integridade e Ética Atuar de forma integra e ética na condução dos negócios e na relação com seus colaboradores;</lo>
+                        <li>RespeitoInteragir com respeito nas relações pessoais e profissionais;</lo>
+                        <li>Comprometimento Compromisso dos sócios e colaboradores com os objetivos da organização;</lo>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
+    <!--FIM SECTION ABOUT ME-->
 
+
+    <!--SECTION ESPECIALITY-->
     <section class="section-espec">
         <div class="container">
-                <h2>especialidade</h2>
+            <div class="carsousel-box text-center" style=" opacity: 0.75;">
 
-        </div>
+                <div class="card mx-1" style="width: 15rem;">
+                    <img src="img/multa-card.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DIREITO<br>ADMINISTRATIVO
+                        </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-style">Fale Conosco</a>
+                    </div>
+                </div>
+                <div class="card mx-1" style="width: 15rem;">
+                    <img src="img/multa-card.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">RECURSOS<br>ADMINISTRATIVOS</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-style">Fale Conosco</a>
+                    </div>
+                </div>
+                <div class="card mx-1" style="width: 15rem;">
+                    <img src="img/multa-card.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DIREITO<br>DA FAMÍLIA</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-style">Fale Conosco</a>
+                    </div>
+                </div>
+                <div class="card mx-1" style="width: 15rem;">
+                    <img src="img/multa-card.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DIREITO<br>TRABALHISTA</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-style">Fale Conosco</a>
+                    </div>
+                </div>
+                <div class="card mx-1" style="width: 15rem;">
+                    <img src="img/multa-card.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DIREITO<br>CRIMINAL</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-style">Fale Conosco</a>
+                    </div>
+                </div>
+            </div>
+        </div>   
     </section>
+    <!-- FIM SECTION ESPECIALITY-->
+
+
+    <!--SECTION EQUIP-->
+    <section class="section-equip">
+            <div class="section-espec-box">
+                
+    
+            </div>
+    </section>
+
     <!--FOOTER - RODAPÉ-->
     <footer class="main-footer">
 
@@ -156,6 +241,13 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="bootstrap-4.2.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="script/js/animacao-slick.js"></script>
+    
+
+
+
 </body>
 
 </html>
