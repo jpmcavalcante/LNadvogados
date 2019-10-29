@@ -69,31 +69,17 @@ nav a:hover{
 
     /* SESSÃO ABOUT-ME */ 
     .section-aboutme{
-        background: url("/img/fundo-aboutme.jpg");
+        background: url('../img/fundo-aboutme.jpg');
         background-size: cover;
         background-position: right;
         height: 100vh;
         display: flex;
         align-items: center;
-        font-size: 90%;
+        font-size: 80%;
     }
 
-        @media screen and (max-width: 767px){
-            .section-aboutme{
-                font-size: 80%;
-                padding: 0 4%;
-            }
-            .section-aboutme img{
-                display: none;
-            }
-            .section-espec{   
-                background-position: center right;
-            }  
-            .navbar-menu{
-                justify-content: left !important;
-                margin-left: 1%;
-            }
-        }
+        
+
 
         
         .aboutme-text{
@@ -108,7 +94,7 @@ nav a:hover{
 
 
 .section-espec{ 
-    background-image: url("/img/fundo-espec.jpg");
+    background-image: url('../img/fundo-espec.jpg');
     height: 100vh;
     background-attachment: fixed;
     background-size: cover;
@@ -183,3 +169,21 @@ footer p{
     text-align: left;
 }
 
+/*  AJUSTE DE TELA ABAIXO DE 767PX DE LARGURA */
+@media screen and (max-width: 767px){
+    .section-aboutme{
+        font-size: 65%;
+        padding: 0 4%;
+    }
+    .section-aboutme img{
+        display: none;
+    }
+    .section-espec{   
+        background-position: center right;
+        overflow: hidden;
+    }  
+    .navbar-menu{
+        justify-content: left !important;
+        margin-left: 1%;
+    }
+}
