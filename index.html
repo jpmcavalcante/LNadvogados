@@ -18,43 +18,52 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet"  type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 
-<body>
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+
+<body style="background-color: rgb(233, 236, 236);">
     <!--MENU - NAVBAR-->
     <header>
-        <nav class="navbar navbar-expand-lg"> 
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo_ln.svg"
-                        alt="Logotipo do Escritório de Advocacia Leite Neves" />
+        <div class="row header-logo py-2">
+            <div class="col-sm-4 teste-logo">
+                <a class="navbar-brand" href="index.html" style="margin: auto; display: flex; justify-content: center;">
+                    <img class="logo img-fluid" src="img/logo_ln.svg" alt="Logotipo do Escritório de Advocacia Leite Neves" />
                 </a>
-                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg"> 
+            <div class="navbar-header continer-fluid">
+                
+                <div class="menu-header py-1">
+                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg">
-                        <li class="nav-item active mr-2">
-                            <a class="btn btn-style" role="button" href="#">consultar processo</a>
-                        </li>
-                        <li class="nav-item active mr-2">
-                            <a class="nav-link" href="#">página inicial</a>
-                        </li>
-                        <li class="nav-item active mr-2">
-                            <a class="nav-link" href="#">quem somos</a>
-                        </li>
-                        <li class="nav-item active mr-2">
-                            <a class="nav-link" href="#">especialidade</a>
-                        </li>
-                        <li class="nav-item active mr-2">
-                                <a class="nav-link" href="#">equipe</a>
-                        </li>
-                        <li class="nav-item active mr-2">
-                                <a class="nav-link" href="#">blog</a>
-                        </li>
-                        <li class="nav-item active mr-2">
-                            <a class="nav-link" href="#">contato</a>
-                        </li>
-                    </ul>
+                    <div class="collapse navbar-collapse container-fluid row justify-content-center navbar-menu" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav  mt-lg">
+                            <li class="nav-item active mr-2">
+                                <a class="btn btn-style" role="button" href="#">consultar processo</a>
+                            </li>
+                            <li class="nav-item active mr-2">
+                                <a class="nav-link" href="#">nosso escritório</a>
+                            </li>
+                            <li class="nav-item active mr-2">
+                                <a class="nav-link" href="#">área de atuação</a>
+                            </li>
+                            <li class="nav-item active mr-2">
+                                    <a class="nav-link" href="#">advogados</a>
+                            </li>
+                            <li class="nav-item active mr-2">
+                                    <a class="nav-link" href="#">blog</a>
+                            </li>
+                            <li class="nav-item active mr-2">
+                                <a class="nav-link" href="#">contato</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -71,24 +80,27 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/slide02.jpg" class="d-block w-100" alt="...">
+                        <img src="img/slide01.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>PRIMEIRO SLIDE</h5>
+                            <h5 class="text-uppercase font-weight-bold" style="color: rgb(119, 91, 1)">recursos administrativos</h5>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <a href="#" class="btn btn-style">Fale Conosco</a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/slide02.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>SEGUNDO SLIDE</h5>
+                            <h5 class="text-uppercase font-weight-bold" style="color: rgb(119, 91, 1)">direito da família</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-style">Fale Conosco</a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/slide03.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>TERCEIRO SLIDE</h5>
+                            <h5 class="text-uppercase font-weight-bold" style="color: rgb(119, 91, 1)">direito trabalhista</h5>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <a href="#" class="btn btn-style">Fale Conosco</a>
                         </div>
                     </div>
                 </div>
@@ -104,6 +116,33 @@
         </section>
     </main>
 
+<div class="jumbotron container-fluid text-justify" style="margin-bottom: 0; font-size: 80%; max-width: 85%;">
+       
+        <div class="">
+            <h4 style="color: rgb(243, 139, 3);">Primeira Notícia</h4>
+            <p>Nulla quis porttitor quam, quis lobortis sapien. Maecenas tellus eros, volutpat et ligula ut, iaculis rutrum mi. Pellentesque pharetra pellentesque est, eget efficitur est vehicula quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis consequat placerat. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque ac odio sed felis molestie viverra.</p>
+            <a href="#" class="btn btn-style">Saiba Mais</a>
+        </div>
+        <div class="img-teste">
+            <h4 style="color: rgb(243, 139, 3);">Segunda Notícia</h4>
+            <p>Nulla quis porttitor quam, quis lobortis sapien. Maecenas tellus eros, volutpat et ligula ut, iaculis rutrum mi. Pellentesque pharetra pellentesque est, eget efficitur est vehicula quis.</p>
+            <a href="#" class="btn btn-style">Saiba Mais</a>
+        </div>    
+        <div class="img-teste">
+            <h4 style="color: rgb(243, 139, 3);">Terceira Notícia</h4>
+            <p>Nulla quis porttitor quam, quis lobortis sapien. Maecenas tellus eros, volutpat et ligula ut, iaculis rutrum mi. Pellentesque pharetra pellentesque est, eget efficitur est vehicula quis.</p>
+            <a href="#" class="btn btn-style">Saiba Mais</a>
+        </div>
+        <div class="img-teste">
+            <h4 style="color: rgb(243, 139, 3);">Quarta Notícia</h4>
+            <p>Nulla quis porttitor quam, quis lobortis sapien. Maecenas tellus eros, volutpat et ligula ut, iaculis rutrum mi. Pellentesque pharetra pellentesque est, eget efficitur est vehicula quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis consequat placerat. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque ac odio sed felis molestie viverra.</p>
+            <a href="#" class="btn btn-style">Saiba Mais</a>
+        </div> 
+  
+            
+</div>
+    
+
     <!--SECTION ABOUT ME-->
     <section class="section-aboutme">
         <div class="container">
@@ -112,23 +151,84 @@
                     <img class="img-fluid img-thumbnail" src="img/advogado-model.jpg" alt="Foto de Advogado"/>
                 </div>
                 <div class="aboutme-text text-break text-justify col-sm-12 col-md">
+                    <p>Somos a <strong>Leite Neves Advocacia e Assessoria Jurídica</strong>, atuamos no mercado a mais de 10 anos, sempre com muito respeito aos nossos clientes, buscando proporcionar o melhor serviço possível.</p>
                     <h3>Missão</h3>
                     <p>Oferecer serviços jurídicos e criar valores e soluções inteligentes para o exercício da advocacia com qualidade de excelência, contribuindo com o desenvolvimento, a organização e o sucesso dos nossos clientes, colaboradores e parceiros, interagindo e desenvolvendo ações na comunidade, fortalecendo o exercício do direito de cada cidadão.</p>
                     <h3>Visão</h3>
                     <p>Manter-se como referência nos segmentos em que atua, sendo sempre reconhecida pelos seus clientes como uma empresa moderna, inovadora e eficiente.</p>
                     <h2>Valores</h2>
                     <ul style="padding-left: 3%;">
-                        <li>ExcelênciaPrestar serviços com eficiência e qualidade, superando as expectativas de cada um de seus clientes;</lo>
-                        <li>Integridade e Ética Atuar de forma integra e ética na condução dos negócios e na relação com seus colaboradores;</lo>
-                        <li>RespeitoInteragir com respeito nas relações pessoais e profissionais;</lo>
-                        <li>Comprometimento Compromisso dos sócios e colaboradores com os objetivos da organização;</lo>
+                        <li>Excelência prestar serviços com eficiência e qualidade, superando as expectativas de cada um de seus clientes;</li>
+                        <li>Integridade e Ética Atuar de forma integra e ética na condução dos negócios e na relação com seus colaboradores;</li>
+                        <li>Respeito interagir com respeito nas relações pessoais e profissionais;</li>
+                        <li>Comprometimento Compromisso dos sócios e colaboradores com os objetivos da organização;</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
     <!--FIM SECTION ABOUT ME-->
-
+    
+    <div class="jumbotron container" style="margin-bottom: 0;">
+       
+            <div class="depoimentos" style="display: flex; justify-content: center;">
+                <div>
+                    <div class="title-depoimento">
+                        <h4 style="color: rgb(243, 139, 3);">Depoimento</h4>
+                        <p class="font-italic">
+                        "Mauris egestas efficitur lorem nec ultrices. Nullam iaculis turpis eget tortor varius luctus. Cras tristique."</p>
+                    </div>
+                    <div class="text-foto" style="display: flex; align-items: center;">
+                        <img src="img/depoimento01.png" class="foto-depoimento">
+                    <p style="line-height: 100%; padding-left: 2%;"><strong>Fabiana Carla</strong><br>
+                        Gerente da empresa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="depoimentos" style="display: flex; justify-content: center;">
+                <div>
+                    <div class="title-depoimento">
+                        <h4 style="color: rgb(243, 139, 3);">Depoimento</h4>
+                        <p class="font-italic">
+                        "Mauris egestas efficitur lorem nec ultrices. Nullam iaculis turpis eget tortor varius luctus. Cras tristique."</p>
+                    </div>
+                    <div class="text-foto" style="display: flex; align-items: center;">
+                        <img src="img/depoimento01.png" class="foto-depoimento">
+                    <p style="line-height: 100%; padding-left: 2%;"><strong>Fabiana Carla</strong><br>
+                        Gerente da empresa</p>
+                    </div>
+                </div>
+            </div>    
+            <div class="depoimentos" style="display: flex; justify-content: center;">
+                    <div>
+                        <div class="title-depoimento">
+                            <h4 style="color: rgb(243, 139, 3);">Depoimento</h4>
+                            <p class="font-italic">
+                            "Mauris egestas efficitur lorem nec ultrices. Nullam iaculis turpis eget tortor varius luctus. Cras tristique."</p>
+                        </div>
+                        <div class="text-foto" style="display: flex; align-items: center;">
+                            <img src="img/depoimento01.png" class="foto-depoimento">
+                        <p style="line-height: 100%; padding-left: 2%;"><strong>Fabiana Carla</strong><br>
+                            Gerente da empresa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoimentos" style="display: flex; justify-content: center;">
+                    <div>
+                        <div class="title-depoimento">
+                            <h4 style="color: rgb(243, 139, 3);">Depoimento</h4>
+                            <p class="font-italic">
+                            "Mauris egestas efficitur lorem nec ultrices. Nullam iaculis turpis eget tortor varius luctus. Cras tristique."</p>
+                        </div>
+                        <div class="text-foto" style="display: flex; align-items: center;">
+                            <img src="img/depoimento01.png" class="foto-depoimento">
+                        <p style="line-height: 100%; padding-left: 2%;"><strong>Fabiana Carla</strong><br>
+                            Gerente da empresa</p>
+                        </div>
+                    </div>
+                </div>     
+        </div>
+    
 
     <!--SECTION ESPECIALITY-->
     <section class="section-espec">
@@ -145,7 +245,7 @@
                     </div>
                 </div>
                 <div class="card mx-1" style="width: 15rem;">
-                    <img src="img/multa-card.jpg" class="card-img-top" alt="...">
+                    <img src="img/adm-card.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">RECURSOS<br>ADMINISTRATIVOS</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -153,7 +253,7 @@
                     </div>
                 </div>
                 <div class="card mx-1" style="width: 15rem;">
-                    <img src="img/multa-card.jpg" class="card-img-top" alt="...">
+                    <img src="img/family-card.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">DIREITO<br>DA FAMÍLIA</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -161,7 +261,7 @@
                     </div>
                 </div>
                 <div class="card mx-1" style="width: 15rem;">
-                    <img src="img/multa-card.jpg" class="card-img-top" alt="...">
+                    <img src="img/work-card.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">DIREITO<br>TRABALHISTA</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -169,7 +269,7 @@
                     </div>
                 </div>
                 <div class="card mx-1" style="width: 15rem;">
-                    <img src="img/multa-card.jpg" class="card-img-top" alt="...">
+                    <img src="img/criminal-card.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">DIREITO<br>CRIMINAL</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -245,6 +345,8 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="script/js/animacao-slick.js"></script>
     
+    <script>$('.jumbotron').slick();</script>
+
 
 
 
