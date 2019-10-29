@@ -69,7 +69,7 @@ nav a:hover{
 
     /* SESSÃO ABOUT-ME */ 
     .section-aboutme{
-        background: url("/img/fundo-aboutme.jpg");
+        background: url("../img/fundo-aboutme.jpg");
         background-size: cover;
         background-position: right;
         height: 100vh;
@@ -108,7 +108,7 @@ nav a:hover{
 
 
 .section-espec{ 
-    background-image: url("/img/fundo-espec.jpg");
+    background-image: url("../img/fundo-espec.jpg");
     height: 100vh;
     background-attachment: fixed;
     background-size: cover;
