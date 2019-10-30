@@ -1,4 +1,4 @@
-$('.carsousel-box').slick({
+$('.carousel-box').slick({
     dots: true,
     infinite: false,
     speed: 300,
