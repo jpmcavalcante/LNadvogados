@@ -254,4 +254,23 @@ footer p{
         font-size: 100%;
         color: black;
     }
+   
 }
+
+
+.main-sistem{ 
+    height: 100vh;
+    background-color: rgb(31, 31, 31);
+}
+    .main-sistem-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4% 0;
+        height: auto;
+    }
+    .data-process{
+        margin-top: 3%;
+        background-color: brown;
+    }
