@@ -1,0 +1,114 @@
+.fabi{
+    position: fixed;
+    bottom:40px;
+    right:20px;
+  }
+  
+  .fabi button{
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+    background-color:  rgb(255, 153, 0);
+    border: none;
+    box-shadow: 0 1px 5px rgba(0,0,0,.4);
+    font-size: 24px;
+    color: white;
+      
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+  }
+  
+  .fabi button:focus{
+    outline: none;
+  }
+  
+  .fabi button.main{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgb(255, 153, 0);
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+  }
+  
+  .fabi button.main:before{
+    content: '⏚';
+  }
+  
+  .fabi ul{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    padding:0;
+    padding-right:5px;
+    margin:0;
+    list-style:none;
+    z-index:10;
+    
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+  }
+  
+  .fabi ul li{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: -10%;
+    opacity: 0;
+    
+    -webkit-transition: .3s ease-out;
+    -moz-transition: .3s ease-out;
+    transition: .3s ease-out;
+  }
+  
+  .fabi ul li label{
+    margin-right:10px;
+    white-space: nowrap;
+    display: block;
+    margin-top: 10px;
+    padding: 5px 8px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    border-radius:3px;
+    height: 18px;
+    font-size: 16px;
+    pointer-events: none;
+    opacity:0;
+    
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+  }
+  
+  .fabi.show button.main,
+  .fabi.show button.main{
+    outline: none;
+    background-color: rgb(134, 92, 2);
+    box-shadow: 0 3px 8px rgba(0,0,0,.5);
+   }
+   
+  .fabi.show button.main:before,
+  .fabi.show button.main:before{
+    content: '↑';
+  }
+  
+  .fabi.show button.main + ul,
+  .fabi.show button.main + ul{
+    bottom: 70px;
+  }
+  
+  .fabi.show button.main + ul li,
+  .fabi.show button.main + ul li{
+    margin-bottom: 10px;
+    opacity: 1;
+  }
+  
+  .fabi.show button.main + ul li:hover label,
+  .fabi.show button.main + ul li:hover label{
+    opacity: 1;
+  }

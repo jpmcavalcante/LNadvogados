@@ -5,6 +5,10 @@ body{
     flex-direction: column;
 }
 
+.btn-float-action{
+    display: none;
+}
+
 footer a, nav a{
     text-decoration: none;
     color:  rgb(255, 166, 0);
@@ -67,32 +71,25 @@ nav a:hover{
     flex: 1 0 auto;
 }
 
-    /* SESSÃO ABOUT-ME */ 
-    .section-aboutme{
-        background: url('../img/fundo-aboutme.jpg');
-        background-size: cover;
-        background-position: right;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        font-size: 80%;
+/* SESSÃO ABOUT-ME */ 
+.section-aboutme{
+    background: url('../img/fundo-aboutme.jpg');
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 80%;
+}
+    .aboutme-text{
+        color: white;
     }
-
-        
-
-
-        
-        .aboutme-text{
-            color: white;
+        .aboutme-text h2, .aboutme-text h3{
+            color:  rgb(255, 166, 0);
         }
-            .aboutme-text h2, .aboutme-text h3{
-                color:  rgb(255, 166, 0);
-            }
-    /* FIM SECTION ABOUT-ME */
+/* FIM SECTION ABOUT-ME */
 
-
-
-
+/* SECTION ÁREA DE ATUAÇÃO */
 .section-espec{ 
     background-image: url('../img/fundo-espec.jpg');
     height: 100vh;
@@ -101,8 +98,47 @@ nav a:hover{
     display: flex;
     align-items: center;
 }   
+/* FIM DA SECTION ÁRREA DE ATUAÇÃO */
 
-.card:hover{
+/* SECTION EQUIPE */
+.section-equip{
+    background-image: url('../img/fundo-equip.jpg');
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.foto-advogado{
+    position: relative;
+    width: 16rem !important;
+    overflow: hidden;
+}
+.foto-advogado img:hover + .texto-card{
+    transform: translateY(0);
+}
+    .texto-card{
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.842);
+        color:  rgb(255, 166, 0);
+        width: 100%;
+        padding-top: 4%;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        transform: translateY(125%);
+        transition: transform 1s ease;
+    }
+
+     
+        
+  
+/* FIM SECTION EQUIPE */
+
+.card-box-area:hover{
     background-color: black;
     color: white;
     transition: all 1s ease;
@@ -113,11 +149,18 @@ nav a:hover{
 }
 
 
+.title-section{
+    color:  rgb(255, 166, 0);
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.116);
+    margin-bottom: 2%;
+}
 
-    .section-equip{
-        background-color: rgb(26, 25, 25);
-        height: 100vh; 
-    }
+
+
+    
 
 
 
@@ -125,7 +168,6 @@ nav a:hover{
 footer ul{
    padding: 0;
    margin: 0; 
-   border-left: solid 2px white;
 }
 footer li, nav li{
     list-style: none;
@@ -136,44 +178,54 @@ footer p{
 }
 
 .main-footer{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 90% 10%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-footer-contact{
+    display: flex;
     background-color: rgb(20, 20, 20);
     color: white;
     height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    height: 40%;
 }
-    .main-footer-contact{
-        grid-row: 1 / 2;
+ 
+
+    .footer-contact-address{
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
-        padding: 3%;
+        justify-content: center;
     }
-        .footer-contact-maps{
-            padding: 2% 3%;
+        .footer-contact-address address, .contact{
+            padding: 1% 0;
+            margin: 0;
+            font-size: 80%;
+            margin: 2% 2%;
+            text-align: left;
         }
 
-
 .main-footer-copy{
-    grid-row: 2 / 3;
     background-color: rgb(14, 13, 13);
+    font-size: 60%;
+    height: 5vh;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 65%;
+    justify-content: center;
 }
 
-.footer-navbar{
-    padding: 2% 3%;
-    text-align: left;
-}
 
 /*  AJUSTE DE TELA ABAIXO DE 767PX DE LARGURA */
 @media screen and (max-width: 767px){
     .section-aboutme{
         font-size: 65%;
         padding: 0 4%;
+    }
+    .btn-float-action{
+        display: block;
     }
     .section-aboutme img{
         display: none;
@@ -185,5 +237,20 @@ footer p{
     .navbar-menu{
         justify-content: left !important;
         margin-left: 1%;
+    }
+
+    .foto-advogado{
+        width: 11rem !important;
+        margin-top: 3%;
+    }
+    .footer-contact-address{
+        justify-content: left;
+    }
+    .footer-contact-address address, .contact{
+        margin: 2% 0;
+        text-align: left;
+    }
+    i{
+        font-size: 100%;
     }
 }
