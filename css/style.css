@@ -115,15 +115,26 @@ nav a:hover{
     width: 16rem !important;
     overflow: hidden;
 }
-.foto-advogado img:hover + .texto-card{
-    transform: translateY(0);
+    .img-advogado{
+        width: 100%;
+
+        
+    }
+
+    
+/* PAREI AQUI */
+.box-card:hover { 
+   /* transform: translateY(-100px) */
+   background-color: black;
+   color: white;
 }
+
     .texto-card{
         position: absolute;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.842);
         color:  rgb(255, 166, 0);
-        width: 100%;
+        width: 89%;
         padding-top: 4%;
         font-family: sans-serif;
         display: flex;
