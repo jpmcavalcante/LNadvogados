@@ -36,7 +36,7 @@
   }
   
   .fabi button.main:before{
-    content: '⏚';
+    content: '+';
   }
   
   .fabi ul{
